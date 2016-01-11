@@ -1,10 +1,10 @@
 {
     "@context": "http://thingschema.org",
-    "rdfs:label": "W3Cschema",
+    "rdfs:label": "WoTschema",
     "rdfs:resource": [
         {
             "rdf:Class": "WoTinteractionModel",
-            "rdfs:comment": "Base class for W3C Thing Model Interactions",
+            "rdfs:comment": "Base class for WoT Thing Model Interactions",
             "rdfs:subClassOf": "InteractionModel",
             "ts:mayHave": [
                 "thing",
@@ -20,7 +20,7 @@
                 "params"
             ],
             "ts:usedBy": [
-                "W3C_WoT_IG"
+                "WoT"
             ]
         },
         {
