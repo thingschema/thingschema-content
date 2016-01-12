@@ -69,7 +69,7 @@
     	"boolean": "xs:boolean",
     	"dateTime": "xs:dateTime",
     	
-    	"hasCapability": {"@id": "ts:hasCapability", "@type": "@id"},
-    	"hasAction": {"@id": "ts:hasAction", "@type": "@id"}
+    	"capabilities": {"@id": "ts:hasCapability", "@type": "@id"},
+    	"actions": {"@id": "ts:hasAction", "@type": "@id"}
     }
 }
