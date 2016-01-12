@@ -1,5 +1,5 @@
 {
-    "@context": {"@context": {
+	"@context": {
         "type": "@type",
         "id": "@id",
         "cat": "http://www.w3.org/ns/dcat#",
