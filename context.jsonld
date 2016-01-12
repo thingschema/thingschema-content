@@ -46,8 +46,10 @@
 		"describedby": "http://www.w3.org/2007/05/powder-s#describedby",
         "license": "http://www.w3.org/1999/xhtml/vocab#license",
 		"role": "http://www.w3.org/1999/xhtml/vocab#role",
+		
 		"ts": "http://thingschema.org/schema#",
 		"@vocab": "http://thingschema.org/",
+		
 		"rdftype": {"@id": "rdf:type", "@type": "@id"},
 		"rdfproperty": {"@id": "rdf:Property", "@type": "@id"},
 		"class": {"@id": "rdfs:Class", "@type": "@id"},
@@ -59,11 +61,15 @@
 		"domain": {"@id": "rdfs:domain", "@type": "@id"},
 		"mayHave": {"@id": "ts:mayHave", "@type": "@id"},
     	"usedBy": {"@id": "ts:usedBy", "@type": "@id"},
+    	
     	"decimal": "xs:decimal",
     	"float": "xs:float",
     	"integer": "xs:integer",
     	"string": "xs:string",
     	"boolean": "xs:boolean",
     	"dateTime": "xs:dateTime"
+    	
+    	"hasCapability": {"@id": "ts:hasCapability", "@type": "@id"},
+    	"hasAction": {"@id": "ts:hasAction", "@type": "@id"}
     }
 }
