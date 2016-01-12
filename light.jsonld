@@ -1,50 +1,44 @@
 {
     "@context": "http://thingschema.org",
-    "rdfs:label": "light",
-    "rdfs:resource": [
+    "label": "light",
+    "resource": [
         {
-            "rdf:Class": "light",
-            "rdf:type": "capability",
-            "rdfs:comment": " base capability for lighting control ",
-            "ts:mayHave": [
+            "class": "light",
+            "comment": " base capability for lighting control ",
+            "mayHave": [
                 "onOff",
                 "brightness",
                 "color"
             ],
-            "ts:usedBy": [
+            "type": "capability",
+            "usedBy": [
                 "thing",
                 "capability"
             ]
         },
         {
-            "params": {
-                "targetValue": "targetState",
-                "transitionTime": "delayTime"
-            },
-            "rdf:Class": "onOff",
-            "rdf:type": "capability",
-            "rdfs:comment": " on/off control ",
-            "ts:mayHave": [
+            "class": "onOff",
+            "comment": " on/off control ",
+            "mayHave": [
                 "currentState",
                 "targetState",
                 "delayTime",
                 "change",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "targetValue": "targetState",
+                "transitionTime": "delayTime"
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "params": {
-                "moveRate": "moveBrightness",
-                "stepSize": "stepBrightness",
-                "targetValue": "targetBrightness"
-            },
-            "rdf:Class": "brightness",
-            "rdf:type": "capability",
-            "rdfs:comment": " level control ",
-            "ts:mayHave": [
+            "class": "brightness",
+            "comment": " level control ",
+            "mayHave": [
                 "currentBrightness",
                 "targetBrightness",
                 "stepBrightness",
@@ -57,43 +51,34 @@
                 "stop",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "moveRate": "moveBrightness",
+                "stepSize": "stepBrightness",
+                "targetValue": "targetBrightness"
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "rdf:Class": "color",
-            "rdf:type": "capability",
-            "rdfs:comment": " color control ",
-            "ts:mayHave": [
+            "class": "color",
+            "comment": " color control ",
+            "mayHave": [
                 "colorHS",
                 "colorXY",
                 "colorRGB",
                 "colorTemperature"
             ],
-            "ts:usedBy": [
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "params": {
-                "moveRate": [
-                    "moveHue",
-                    "moveSaturation"
-                ],
-                "stepSize": [
-                    "stepHue",
-                    "stepSaturation"
-                ],
-                "targetValue": [
-                    "targetHue",
-                    "targetSaturation"
-                ]
-            },
-            "rdf:Class": "colorHS",
-            "rdf:type": "capability",
-            "rdfs:comment": " HS color control ",
-            "ts:mayHave": [
+            "class": "colorHS",
+            "comment": " HS color control ",
+            "mayHave": [
                 "currentHue",
                 "currentSaturation",
                 "targetHue",
@@ -110,29 +95,29 @@
                 "stop",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "moveRate": [
+                    "moveHue",
+                    "moveSaturation"
+                ],
+                "stepSize": [
+                    "stepHue",
+                    "stepSaturation"
+                ],
+                "targetValue": [
+                    "targetHue",
+                    "targetSaturation"
+                ]
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "params": {
-                "moveRate": [
-                    "moveX",
-                    "moveY"
-                ],
-                "stepSize": [
-                    "stepX",
-                    "stepY"
-                ],
-                "targetValue": [
-                    "targetX",
-                    "targetY"
-                ]
-            },
-            "rdf:Class": "colorXY",
-            "rdf:type": "capability",
-            "rdfs:comment": " XY (CIE) Color control ",
-            "ts:mayHave": [
+            "class": "colorXY",
+            "comment": " XY (CIE) Color control ",
+            "mayHave": [
                 "currentX",
                 "currentY",
                 "targetX",
@@ -149,32 +134,29 @@
                 "stop",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "moveRate": [
+                    "moveX",
+                    "moveY"
+                ],
+                "stepSize": [
+                    "stepX",
+                    "stepY"
+                ],
+                "targetValue": [
+                    "targetX",
+                    "targetY"
+                ]
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "params": {
-                "moveRate": [
-                    "moveRed",
-                    "moveBlue",
-                    "moveGreen"
-                ],
-                "stepSize": [
-                    "stepRed",
-                    "stepBlue",
-                    "stepGreen"
-                ],
-                "targetValue": [
-                    "targetRed",
-                    "targetBlue",
-                    "targetGreen"
-                ]
-            },
-            "rdf:Class": "colorRGB",
-            "rdf:type": "capability",
-            "rdfs:comment": " RGB Color Control ",
-            "ts:mayHave": [
+            "class": "colorRGB",
+            "comment": " RGB Color Control ",
+            "mayHave": [
                 "currentRed",
                 "currentGreen",
                 "currentBlue",
@@ -195,26 +177,32 @@
                 "stop",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "moveRate": [
+                    "moveRed",
+                    "moveBlue",
+                    "moveGreen"
+                ],
+                "stepSize": [
+                    "stepRed",
+                    "stepBlue",
+                    "stepGreen"
+                ],
+                "targetValue": [
+                    "targetRed",
+                    "targetBlue",
+                    "targetGreen"
+                ]
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
-            "params": {
-                "moveRate": [
-                    "moveTemperature"
-                ],
-                "stepSize": [
-                    "stepTemperature"
-                ],
-                "targetValue": [
-                    "targetTemperature"
-                ]
-            },
-            "rdf:Class": "colorTemperature",
-            "rdf:type": "capability",
-            "rdfs:comment": " color Temperature control ",
-            "ts:mayHave": [
+            "class": "colorTemperature",
+            "comment": " color Temperature control ",
+            "mayHave": [
                 "currentTemperature",
                 "targetTemperature",
                 "transitionTime",
@@ -227,19 +215,31 @@
                 "stop",
                 "propertyValueChange"
             ],
-            "ts:usedBy": [
+            "params": {
+                "moveRate": [
+                    "moveTemperature"
+                ],
+                "stepSize": [
+                    "stepTemperature"
+                ],
+                "targetValue": [
+                    "targetTemperature"
+                ]
+            },
+            "type": "capability",
+            "usedBy": [
                 "light"
             ]
         },
         {
+            "class": "change",
+            "comment": " change action ",
             "params": [
                 "targetValue",
                 "transitionTime"
             ],
-            "rdf:Class": "change",
-            "rdf:type": "action",
-            "rdfs:comment": " change action ",
-            "ts:usedBy": [
+            "type": "action",
+            "usedBy": [
                 "onOff",
                 "brightness",
                 "colorHS",
@@ -249,13 +249,13 @@
             ]
         },
         {
+            "class": "move",
+            "comment": " move action ",
             "params": [
                 "moveRate"
             ],
-            "rdf:Class": "move",
-            "rdf:type": "action",
-            "rdfs:comment": " move action ",
-            "ts:usedBy": [
+            "type": "action",
+            "usedBy": [
                 "brightness",
                 "colorHS",
                 "colorXY",
@@ -264,14 +264,14 @@
             ]
         },
         {
+            "class": "step",
+            "comment": " step action ",
             "params": [
                 "stepSize",
                 "transitionTime"
             ],
-            "rdf:Class": "step",
-            "rdf:type": "action",
-            "rdfs:comment": " step action ",
-            "ts:usedBy": [
+            "type": "action",
+            "usedBy": [
                 "brightness",
                 "colorHS",
                 "colorXY",
@@ -280,11 +280,11 @@
             ]
         },
         {
+            "class": "stop",
+            "comment": " stop action ",
             "params": [],
-            "rdf:Class": "stop",
-            "rdf:type": "action",
-            "rdfs:comment": " stop action ",
-            "ts:usedBy": [
+            "type": "action",
+            "usedBy": [
                 "brightness",
                 "colorHS",
                 "colorXY",
@@ -293,13 +293,13 @@
             ]
         },
         {
-            "rdf:Class": "propertyValueChange",
-            "rdf:type": "event",
-            "rdfs:comment": " event for changes in the value of a property ",
-            "ts:mayHave": [
+            "class": "propertyValueChange",
+            "comment": " event for changes in the value of a property ",
+            "mayHave": [
                 "params"
             ],
-            "ts:usedBy": [
+            "type": "event",
+            "usedBy": [
                 "onOff",
                 "brightness",
                 "colorHS",
@@ -309,13 +309,13 @@
             ]
         },
         {
-            "rdf:Class": "actionInvoked",
-            "rdf:type": "event",
-            "rdfs:comment": " event for changes in the value of a property ",
-            "ts:mayHave": [
+            "class": "actionInvoked",
+            "comment": " event for changes in the value of a property ",
+            "mayHave": [
                 "params"
             ],
-            "ts:usedBy": [
+            "type": "event",
+            "usedBy": [
                 "onOff",
                 "brightness",
                 "colorHS",
@@ -325,13 +325,13 @@
             ]
         },
         {
-            "rdf:Class": "actionCompleted",
-            "rdf:type": "event",
-            "rdfs:comment": " event for changes in the value of a property ",
-            "ts:mayHave": [
+            "class": "actionCompleted",
+            "comment": " event for changes in the value of a property ",
+            "mayHave": [
                 "params"
             ],
-            "ts:usedBy": [
+            "type": "event",
+            "usedBy": [
                 "onOff",
                 "brightness",
                 "colorHS",

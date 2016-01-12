@@ -1,12 +1,11 @@
 {
     "@context": "http://thingschema.org",
-    "rdfs:label": "WoTschema",
-    "rdfs:resource": [
+    "label": "WoTschema",
+    "resource": [
         {
-            "rdf:Class": "WoTinteractionModel",
-            "rdfs:comment": "Base class for WoT Thing Model Interactions",
-            "rdfs:subClassOf": "InteractionModel",
-            "ts:mayHave": [
+            "class": "WoTinteractionModel",
+            "comment": "Base class for WoT Thing Model Interactions",
+            "mayHave": [
                 "thing",
                 "event",
                 "action",
@@ -19,126 +18,127 @@
                 "value",
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "InteractionModel",
+            "usedBy": [
                 "WoT"
             ]
         },
         {
-            "rdf:Class": "index",
-            "rdfs:comment": "Index class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "index",
+            "comment": "Index class",
+            "mayHave": [
                 "thing",
                 "capability",
                 "index"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "index",
                 "thing"
             ]
         },
         {
-            "rdf:Class": "capability",
-            "rdfs:comment": "Capability class",
-            "rdfs:subClassOf": "index",
-            "ts:mayHave": [
+            "class": "capability",
+            "comment": "Capability class",
+            "mayHave": [
                 "event",
                 "action",
                 "property",
                 "capability"
             ],
-            "ts:usedBy": [
+            "subClassOf": "index",
+            "usedBy": [
                 "index",
                 "thing"
             ]
         },
         {
-            "rdf:Class": "thing",
-            "rdfs:comment": "Thing class",
-            "rdfs:subClassOf": "capability",
-            "ts:mayHave": [
+            "class": "thing",
+            "comment": "Thing class",
+            "mayHave": [
                 "event",
                 "action",
                 "property",
                 "capability",
                 "index"
             ],
-            "ts:usedBy": [
+            "subClassOf": "capability",
+            "usedBy": [
                 "index"
             ]
         },
         {
-            "rdf:Class": "event",
-            "rdfs:comment": "Event class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "event",
+            "comment": "Event class",
+            "mayHave": [
                 "subscription",
                 "notification",
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "thing",
                 "capability"
             ]
         },
         {
-            "rdf:Class": "action",
-            "rdfs:comment": "Action class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "action",
+            "comment": "Action class",
+            "mayHave": [
                 "actuation",
                 "notification",
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "thing",
                 "capability"
             ]
         },
         {
-            "rdf:Class": "property",
-            "rdfs:comment": "Property class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "property",
+            "comment": "Property class",
+            "mayHave": [
                 "value"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "thing",
                 "capability"
             ]
         },
         {
-            "rdf:Class": "subscription",
-            "rdfs:comment": "Subscription class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "subscription",
+            "comment": "Subscription class",
+            "mayHave": [
                 "notification",
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "event"
             ]
         },
         {
-            "rdf:Class": "actuation",
-            "rdfs:comment": "Actuation class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "actuation",
+            "comment": "Actuation class",
+            "mayHave": [
                 "notification",
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "action"
             ]
         },
         {
-            "rdf:Class": "notification",
-            "rdfs:comment": "Notification class",
-            "rdfs:subClassOf": "WoTinteractionModel",
-            "ts:mayHave": [
+            "class": "notification",
+            "comment": "Notification class",
+            "mayHave": [
                 "params"
             ],
-            "ts:usedBy": [
+            "subClassOf": "WoTinteractionModel",
+            "usedBy": [
                 "subscription",
                 "actuation"
             ]
