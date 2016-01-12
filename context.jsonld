@@ -59,11 +59,11 @@
 		"domain": "rdfs:domain",
 		"mayHave": "ts:mayHave",
     	"usedBy": "ts:usedBy",
-    	"decimal" = "xs:decimal",
-    	"float" = "xs:float",
-    	"integer" = "xs:integer",
-    	"string" = "xs:string",
-    	"boolean" = "xs:boolean",
-    	"dateTime" = "xs:dateTime"
+    	"decimal": "xs:decimal",
+    	"float": "xs:float",
+    	"integer": "xs:integer",
+    	"string": "xs:string",
+    	"boolean": "xs:boolean",
+    	"dateTime": "xs:dateTime"
     }
 }
