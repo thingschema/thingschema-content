@@ -1,0 +1,20 @@
+{
+	"@context" : "http://thingschema.org",
+	"label": "myLight",
+  	"resource":[
+  		{"name": "mylight", "type":"light", "hasCapability": 
+        	[
+            	{"type":"onOff", "name":"onOff", 
+            	"hasAction":["change"]
+            	}, 
+            	{"type":"HScolor", "name":"HScolor",
+            	"hasAction": ["change"]
+            	}, 
+            	{"type":"brightness", "name":"brightness",
+            	"hasAction": ["change", "move", "step"]
+            	}
+    		]
+		}
+             
+	]
+}
