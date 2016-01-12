@@ -1,4 +1,5 @@
-{"@context":    {
+{
+    "@context": {"@context": {
         "type": "@type",
         "id": "@id",
         "cat": "http://www.w3.org/ns/dcat#",
@@ -42,9 +43,27 @@
         "v": "http://rdf.data-vocabulary.org/#",
         "vcard": "http://www.w3.org/2006/vcard/ns#",
         "schema": "http://thingschema.org/",
-        "describedby": "http://www.w3.org/2007/05/powder-s#describedby",
+		"describedby": "http://www.w3.org/2007/05/powder-s#describedby",
         "license": "http://www.w3.org/1999/xhtml/vocab#license",
         "role": "http://www.w3.org/1999/xhtml/vocab#role",
-	"ts": "http://thingschema.org/schema#"
+		"ts": "http://thingschema.org/schema#",
+		"@vocab": "http://thingschema.org/",
+		"type": "rdf:type",
+		"property": "rdf:Property",
+		"class": "rdfs:Class",
+		"comment": "rdfs:comment",
+		"subClassOf": "rdfs:subClassOf",
+		"label": "rdfs:label",
+		"resource": "rdfs:Resource",
+		"range": "rdfs:range",
+		"domain": "rdfs:domain",
+		"mayHave": "ts:mayHave",
+    	"usedBy": "ts:usedBy",
+    	"decimal" = "xs:decimal",
+    	"float" = "xs:float",
+    	"integer" = "xs:integer",
+    	"string" = "xs:string",
+    	"boolean" = "xs:boolean",
+    	"dateTime" = "xs:dateTime"
     }
 }
