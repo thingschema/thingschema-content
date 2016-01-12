@@ -67,7 +67,7 @@
     	"integer": "xs:integer",
     	"string": "xs:string",
     	"boolean": "xs:boolean",
-    	"dateTime": "xs:dateTime"
+    	"dateTime": "xs:dateTime",
     	
     	"hasCapability": {"@id": "ts:hasCapability", "@type": "@id"},
     	"hasAction": {"@id": "ts:hasAction", "@type": "@id"}
