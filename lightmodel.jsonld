@@ -2,16 +2,17 @@
 	"@context" : "http://thingschema.org",
 	"label": "myLight",
   	"resource":[
-  		{"name": "mylight", "type":"light", "hasCapability": 
+  		{"name": "mylight", "type":"light", 
+  			"capabilities": 
         	[
             	{"type":"onOff", "name":"onOff", 
-            	"hasAction":["change"]
+            	"actions":["change"]
             	}, 
             	{"type":"HScolor", "name":"HScolor",
-            	"hasAction": ["change"]
+            	"actions": ["change"]
             	}, 
             	{"type":"brightness", "name":"brightness",
-            	"hasAction": ["change", "move", "step"]
+            	"actions": ["change", "move", "step"]
             	}
     		]
 		}
