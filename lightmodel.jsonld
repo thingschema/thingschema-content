@@ -1,21 +1,50 @@
 {
-	"@context" : "http://thingschema.org",
-	"label": "myLight",
-  	"resource":[
-  		{"name": "mylight", "type":"light", 
-  			"capabilities": 
-        	[
-            	{"type":"onOff", "name":"onOff", 
-            	"actions":["change"]
-            	}, 
-            	{"type":"HScolor", "name":"HScolor",
-            	"actions": ["change"]
-            	}, 
-            	{"type":"brightness", "name":"brightness",
-            	"actions": ["change", "move", "step"]
-            	}
-    		]
-		}
-             
-	]
+  "@context": "http://thingschema.org",
+  "label": "mylight",
+  "resource": [
+    {
+      "capabilities": [
+        {
+          "actions": [
+            {
+              "name": "change",
+              "type": "change"
+            }
+          ],
+          "name": "onoff",
+          "type": "onoff"
+        },
+        {
+          "actions": [
+            {
+              "name": "change",
+              "type": "change"
+            }
+          ],
+          "name": "colorhs",
+          "type": "colorhs"
+        },
+        {
+          "actions": [
+            {
+              "name": "change",
+              "type": "change"
+            },
+            {
+              "name": "move",
+              "type": "move"
+            },
+            {
+              "name": "step",
+              "type": "step"
+            }
+          ],
+          "name": "brightness",
+          "type": "brightness"
+        }
+      ],
+      "name": "mylight",
+      "type": "light"
+    }
+  ]
 }
