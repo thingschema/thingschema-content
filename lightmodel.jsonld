@@ -1,50 +1,86 @@
 {
   "@context": "http://thingschema.org",
-  "label": "mylight",
+  "label": "light",
   "resource": [
     {
+      "type": "light",
+      "name": "light",
       "capabilities": [
         {
+          "type": "onoff",
+          "name": "onOff",
           "actions": [
             {
-              "name": "change",
-              "type": "change"
+              "type": "change",
+              "name": "change"
             }
           ],
-          "name": "onoff",
-          "type": "onoff"
-        },
-        {
-          "actions": [
+          "properties": [
             {
-              "name": "change",
-              "type": "change"
-            }
-          ],
-          "name": "colorhs",
-          "type": "colorhs"
-        },
-        {
-          "actions": [
-            {
-              "name": "change",
-              "type": "change"
+              "type": "currentstate",
+              "name": "currentState"
             },
             {
-              "name": "move",
-              "type": "move"
+              "type": "targetstate",
+              "name": "targetState"
             },
             {
-              "name": "step",
-              "type": "step"
+              "type": "delaytime",
+              "name": "delayTime"
             }
-          ],
+          ]
+        },
+        {
+          "type": "colorhs",
+          "name": "colorHS",
+          "actions": [
+            {
+              "type": "change",
+              "name": "change"
+            }
+          ]
+        },
+        {
+          "type": "brightness",
           "name": "brightness",
-          "type": "brightness"
+          "actions": [
+            {
+              "type": "change",
+              "name": "change"
+            },
+            {
+              "type": "move",
+              "name": "move"
+            },
+            {
+              "type": "step",
+              "name": "step"
+            }
+          ],
+          "properties": [
+            {
+              "type": "currentbrightness",
+              "name": "currentBrightness"
+            },
+            {
+              "type": "targetbrightness",
+              "name": "targetBrightness"
+            },
+            {
+              "type": "movebrightness",
+              "name": "moveBrightness"
+            },
+            {
+              "type": "stepbrightness",
+              "name": "stepBrightness"
+            },
+            {
+              "type": "transitiontime",
+              "name": "transitionTime"
+            }
+          ]
         }
-      ],
-      "name": "mylight",
-      "type": "light"
+      ]
     }
   ]
 }
