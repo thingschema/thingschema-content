@@ -70,6 +70,8 @@
     	"dateTime": "xs:dateTime",
     	
     	"capabilities": {"@id": "ts:hasCapability", "@type": "@id"},
-    	"actions": {"@id": "ts:hasAction", "@type": "@id"}
+    	"events": {"@id": "ts:hasEvent", "@type": "@id"},
+    	"actions": {"@id": "ts:hasAction", "@type": "@id"},
+    	"properties": {"@id": "ts:hasProperty", "@type": "@id"}
     }
 }
