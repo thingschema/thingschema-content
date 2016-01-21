@@ -1,0 +1,60 @@
+[ 
+  { 
+    "bn": "/light/brightness",
+    "l": [
+      { "href": "",
+        "rel": ["self"],
+        "rt": ["brightness", "capability"]
+      },
+      { "href": "change",
+        "rel": ["form", "item"],
+        "rt": ["change", "action"],
+        "ct": ["application/forms+senml+json"]
+      },
+      { "href": "tbr",
+        "rel": ["item"],
+        "rt": ["property", "param", "targetbrightness" ],
+        "ct": "application/senml+json"
+      },      
+      { "href": "tt",
+        "rel": ["item"],
+        "rt": ["property", "param", "transitiontime" ],
+        "ct": ["application/senml+json"]
+      },
+      { "href": "actuations",
+        "rel": ["sub"],
+        "rt": ["actuation", "index"],
+        "ct": ["application/collection+senml+json"]
+      }     
+    ],
+    "i": [
+      { "n": "tbr",
+        "v": "44.3"
+      },
+      { "n": "tt",
+        "v": "1.0"
+      },
+      { "n": "change",
+        "fv": {
+          "anchor": "../brightness",
+          "rel": ["action"],
+          "type": ["change", "action"],
+          "method": "post",
+          "href": "actuations",
+          "ct": "application/collection+senml+json",
+          "template": [{
+          	"bn": "../../brightness",
+          	"i": [
+            	{ "n": "tbr", 
+             	 "v": "$targetbrightness"
+           	 	},
+            	{ "n": "tt", 
+              	"v": "$transitiontime"
+            	}
+          	]
+          }]
+        }
+      }
+    ]	
+  }
+]
