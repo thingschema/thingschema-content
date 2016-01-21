@@ -1,0 +1,15 @@
+{
+  "@context": "http://thingschema.org",
+  "type": "index",
+  "ct": "application/collection+link-format+json",
+  "comment": "collection of links to catalogs that may contain useful links",
+  "l": [
+    {
+      "href": "http://192.168.1.100:8000/rd",
+      "rt": "core.rd",
+      "ct": "application/link-format+json",
+      "comment": "hypermedia demonstrator discovery"
+    }
+  ]
+}
+    

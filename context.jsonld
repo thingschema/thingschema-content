@@ -62,6 +62,10 @@
 		"mayHave": {"@id": "ts:mayHave", "@type": "@id"},
     	"usedBy": {"@id": "ts:usedBy", "@type": "@id"},
     	
+    	"href": {"@id": "ts:href", "@type": "@id"},
+    	"ct": {"@id": "ts:contentFormat", "@type": "@id"},
+    	"rt": {"@id": "ts:resourceType", "@type": "@id"},
+    	
     	"decimal": "xs:decimal",
     	"float": "xs:float",
     	"integer": "xs:integer",
@@ -72,6 +76,8 @@
     	"capabilities": {"@id": "ts:hasCapability", "@type": "@id"},
     	"events": {"@id": "ts:hasEvent", "@type": "@id"},
     	"actions": {"@id": "ts:hasAction", "@type": "@id"},
-    	"properties": {"@id": "ts:hasProperty", "@type": "@id"}
+    	"properties": {"@id": "ts:hasProperty", "@type": "@id"},
+    	"links": {"@id": "ts:hasLink", "@type": "@id"},
+    	"l": {"@id": "ts:hasLink", "@type": "@id"}    	
     }
 }

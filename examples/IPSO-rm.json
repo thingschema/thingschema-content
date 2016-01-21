@@ -1,0 +1,24 @@
+{
+"bn":"/3303/1/",
+"e":[
+{"n":"5700","v":"31.3","u":"Cel"},
+{"n":"5701","sv":"Cel"},
+{"n":"5602","v":"87.1","u":"Cel"},
+{"n":"5601","v":"18.3","u":"Cel"},
+{"n":"5605"},
+{"n":"5603","v":"0","u":"Cel"},
+{"n":"5604","v":"260","u":"Cel"},
+{"n":"5750","sv":"Inboard Bearing"}
+],
+"l":[
+{"href":"","rel":"self","rt":"temperature","u":"Cel"},
+{"href":"5700","rt":"currentValue","u":"Cel"},
+{"href":"5701","rt":"units"},
+{"href":"5602","rt":"maxValue","u":"Cel"},
+{"href":"5601","rt":"minValue","u":"Cel"},
+{"href":"5605","rt":"resetMaxMin"},
+{"href":"5603","rt":"minRange","u":"Cel"},
+{"href":"5604","rt":"maxRange","u":"Cel"},
+{"href":"5750","rt":"appType"}
+]
+}
