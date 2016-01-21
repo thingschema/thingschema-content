@@ -5,7 +5,7 @@
   "comment": "collection of links to catalogs that may contain useful links",
   "l": [
     {
-      "href": "http://192.168.1.100:8000/rd",
+      "href": "http://104.131.134.13:8000/rd",
       "rt": "core.rd",
       "ct": "application/link-format+json",
       "comment": "hypermedia demonstrator discovery"
