@@ -62,7 +62,7 @@
 		"mayHave": {"@id": "ts:mayHave", "@type": "@id"},
     	"usedBy": {"@id": "ts:usedBy", "@type": "@id"},
     	
-    	"href": {"@id": "ts:href", "@type": "@id"},
+    	"href": "ts:href",
     	"ct": {"@id": "ts:contentFormat", "@type": "@id"},
     	"rt": {"@id": "ts:resourceType", "@type": "@id"},
     	
