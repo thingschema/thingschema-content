@@ -85,10 +85,18 @@
       "type": "index",
       "name": "index",
       "links": [
-        "light",
-        "light/onOff",
-        "light/brightness",
-        "light/colorHS"
+        {
+          "href": "light"
+        },
+        {
+          "href": "light/onOff"
+        },
+        {
+          "href": "light/brightness"
+        },
+        {
+          "href": "light/colorHS"
+        }
       ]
     }
   ],
