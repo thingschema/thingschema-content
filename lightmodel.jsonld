@@ -1,6 +1,5 @@
 {
   "@context": "http://thingschema.org",
-  "label": "light",
   "resource": [
     {
       "type": "light",
@@ -81,6 +80,17 @@
           ]
         }
       ]
+    },
+    {
+      "type": "index",
+      "name": "index",
+      "links": [
+        "/light",
+        "/light/onOff",
+        "/light/brightness",
+        "/light/colorHS"
+      ]
     }
-  ]
+  ],
+  "label": "light"
 }
