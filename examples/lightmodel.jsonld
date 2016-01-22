@@ -86,16 +86,16 @@
       "name": "index",
       "links": [
         {
-          "href": "light"
+          "href": "/light"
         },
         {
-          "href": "light/onOff"
+          "href": "/light/onOff"
         },
         {
-          "href": "light/brightness"
+          "href": "/light/brightness"
         },
         {
-          "href": "light/colorHS"
+          "href": "/light/colorHS"
         }
       ]
     }
